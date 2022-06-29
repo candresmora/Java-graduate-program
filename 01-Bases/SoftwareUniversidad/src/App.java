@@ -12,11 +12,11 @@ class Persona{
     }
 
     void ingresar() {
-
+        System.out.println("La persona con nombre " + this.nombre + " ha ingresado");
     }
 
     void prestarLibro(){
-
+        System.out.println("La persona con nombre  nombre " + this.nombre + " ha solicitado el prestamo de un libro");
     }
 
 }
@@ -35,11 +35,11 @@ class Profesor extends Persona{
     double salario;
 
     void subirNotas(){
-
+        System.out.println("El profesor" + super.nombre + " subio las notas");
     }
     
     void consultarNotas(){
-
+        System.out.println("El profesor ha consultado las notas");
     }
 
 }
@@ -59,11 +59,11 @@ class Estudiante extends Persona{
     }
 
     void presentar_examen(){
-
+        System.out.println("El estudiante ha presentado un examen");
     }
 
     void matricularse(){
-
+        System.out.println("El estudiante " + super.nombre + " se ha matriculado");
     }
 
 }
@@ -75,4 +75,6 @@ public class App {
 
     Profesor profe = new Profesor( "Dario", "Lopez", "1234", "profe@utp.com", "ingenieria", "ab22", 500000);
     
+    Estudiante tripulante = new Estudiante("Juliana", "Martinez", "45469846", "juli@utp.edu.co", "Ingnieria sistemas", "utp12312", 4.2, "Ingenieria");
+
 }
